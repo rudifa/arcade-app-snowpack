@@ -1,4 +1,5 @@
 import { customElement, property, LitElement, html, css } from 'lit-element';
+import { ArcadeApp } from './arcade-app';
 
 @customElement('app-root')
 export class AppRoot extends LitElement {
@@ -7,7 +8,7 @@ export class AppRoot extends LitElement {
   static get styles() {
     return css`
       h1 {
-        font-size: 4rem;
+        font-size: 2rem;
       }
       .wrapper {
         display: flex;
@@ -28,7 +29,7 @@ export class AppRoot extends LitElement {
   render() {
     return html`
       <div class="wrapper">
-        <h1>LitElement + Snowpack</h1>
+        <h1>LitElement + Snowpack + D-Arcade</h1>
         <p>Edit <code>src/app-root.js</code> and save to reload.</p>
         <a
           class="link"
