@@ -1,4 +1,8 @@
-# New Project
+# arcade-app-snowpack
+
+### Apollo client app matching the Apollo Server [arcade-app](https://github.com/rudifa/arcade-app-snowpack)
+
+> ✨ Work in Progress
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
