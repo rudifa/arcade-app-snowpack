@@ -1,6 +1,10 @@
-import { LitElement, html, css } from "lit-element";
+import { customElement, property, LitElement, html, css } from "lit-element";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { openWcLogo } from "./open-wc-logo.js";
+
+import { ToggleButton } from './toggle-button';
+import { ArcadeJson } from './arcade-json';
+import { ArcadeBooks } from './arcade-books';
 
 console.info( "ARCADE› Instantiating Apollo Client…");
 const client = new ApolloClient({
@@ -134,7 +138,11 @@ export class ArcadeApp extends LitElement {
         Made with love at
         <a target="_blank" rel="noopener noreferrer" href="https://gongfu.io"
           >Gōng-fu I/O</a
-        >
+        > </br>
+        Built with 
+        <a target="_blank" rel="noopener noreferrer" href="https://www.snowpack.dev/"
+        >Snowpack</a
+      >
       </p>
     `;
   }

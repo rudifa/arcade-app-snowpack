@@ -3,7 +3,7 @@ import { ArcadeApp } from './arcade-app';
 
 @customElement('app-root')
 export class AppRoot extends LitElement {
-  @property() message = 'Learn LitElement';
+  // @property() message = 'Learn LitElement';
 
   static get styles() {
     return css`
@@ -15,7 +15,7 @@ export class AppRoot extends LitElement {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
+        //height: 100vh;
         background-color: #2196f3;
         background: linear-gradient(315deg, #b4d2ea 0%, #2196f3 100%);
         font-size: 24px;
@@ -29,16 +29,9 @@ export class AppRoot extends LitElement {
   render() {
     return html`
       <div class="wrapper">
-        <h1>LitElement + Snowpack + D-Arcade</h1>
-        <p>Edit <code>src/app-root.js</code> and save to reload.</p>
-        <a
-          class="link"
-          href="https://lit-element.polymer-project.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ${this.message}
-        </a>
+
+        <arcade-app></arcade-app>
+
       </div>
     `;
   }
